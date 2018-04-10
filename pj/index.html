@@ -1,0 +1,322 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="icon" href="../qky2.ico">
+    <title>全课云</title>
+    <link href="../css/animate.css" rel="stylesheet" type="text/css" />
+    <link href="../css/base.css" rel="stylesheet" type="text/css" />
+    <link href="../js/swiper/3.4.1/css/swiper.min.css" rel="stylesheet" type="text/css" />
+    <link href="../css/qkyindex_pj.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="qkybody">
+    <!--加载层-->
+    <div class="loadprogress" id="loadprogress">
+        <div class="progress">
+            <div class="progressyuan">
+                <div class="proleft pro">
+                    <b id="lb"></b>
+                </div>
+                <div class="proright pro">
+                    <b id="rb"></b>
+                </div>
+                <div class="protxt">
+                    <span class="bf" id="bf">0%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--浏览器判断层-->
+    <div class="browser">
+        <div class="browser_mask"></div>
+        <div class="browser_tit">
+            <img src="../images/ieup2.png" alt="" class="browser_icon">
+            <span>您的浏览器版本过低，请升级，你可以选择</span>
+            <a href="https://support.microsoft.com/zh-cn/help/17621/internet-explorer-downloads" target="_blank">
+                <img src="../images/ieicon.png" alt="">
+                <b>升级ie到10及以上</b>
+            </a>
+            <a href="http://www.google.cn/chrome/browser/desktop/index.html" target="_blank">
+                <img src="../images/choicon.png" alt="">
+                <b>使用Chrome浏览器</b>
+            </a>
+            <span class="cizhi">最佳显示屏幕分辨率为1366*768</span>'
+            <div class="browser_close">
+                <img src="../images/close.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!--登录框-->
+    <div class="login_">
+        <div class="zh-login-box trn">
+            <div class="zh-login-title ">登录全课云</div>
+            <form>
+                <div class="zh-login-list">
+                    <div class="tit">
+                        <i class="qkyicon">&#xe642;</i>账号
+                        <span class="err-tit">请输入账号</span>
+                    </div>
+                    <input type="text" class="zh-input" placeholder="请输入手机号或学籍号或账号" id="user">
+                </div>
+                <div class="zh-login-list">
+                    <div class="tit">
+                        <i class="qkyicon">&#xe6d2;</i>密码
+                        <span class="err-tit">请输入密码</span>
+                    </div>
+                    <input type="password" class="zh-input" placeholder="请输入密码" id="pwd">
+                </div>
+                <div class="zh-login-list clear">
+                    <div class="tit">
+                        <i class="qkyicon">&#xe614;</i>验证码
+                        <span class="err-tit">请输入验证码</span>
+                    </div>
+                    <input type="text" class="zh-input yzm" placeholder="请输入右侧显示的字母">
+                    <div class="zh-yzm-img">
+                        <img src="../images/yzm.png" alt="">
+                    </div>
+                </div>
+                <a class="zh-login-button">登录</a>
+            </form>
+            <a href="#" class="zh-link">忘记密码</a>
+        </div>
+    </div>
+
+    <!--头部-->
+    <div class="qkyheader">
+        <div class="barnav clear">
+            <a class="logo fl witer" href="../index.html"></a>
+            <a class="logo fl black" href="../index.html"></a>
+           
+            
+            <a class="loginbut fr">登录云平台</a>
+            <div class="fr qkyindex_nav clear ml20">
+                    <a href="../index.html">首页</a>
+                    <a href="index.html" class="active">产品介绍</a>
+                    <a href="../case">典型案例</a>
+                    <a href="../coop">渠道合作</a>
+                    <a href="../us">关于我们</a>
+           </div>
+        </div>
+    </div>
+
+    <!--中部-->
+    <div class="qkycontent pt50">
+        <div class="swiper-container inbox">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="page page1">
+                        <img src="" alt="">
+                    </div>
+                    <div class="textbox">
+                        <div class="txt txt100"></div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="page page2">
+                        <img src="" alt="">
+                    </div>
+                    <div class="textbox">
+                        <div class="txt txt200"></div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="page page3">
+                        <img src="" alt="">
+                    </div>
+                    <div class="textbox">
+                        <div class="txt txt300"></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="icon-but">
+                <a class="left">
+                    <img src="../images/index/left.png" alt="">
+                </a>
+                <a class="right">
+                    <img src="../images/index/right.png" alt="">
+                </a>
+            </div>
+            <!-- <div class="swiper-pagination"></div> -->
+        </div>
+        <div class="qky_">
+            <div class="qkybox">
+                <div class="qkypj clear">
+                    <div class="qkypj-list trn">
+                        <a href="index_stu.html" target="_blank">
+                        <div class="qkypj-list-up">
+                            <div class="qkypj-list-img pic_set_l"></div>
+                            <div class="qkypj-list-uptxt">
+                                <span>德智体美劳 /
+                                    <br/> 五位一体的评价体系</span>
+                                <label>综合素质发展</label>
+                            </div>
+                        </div>
+                        <div class="qkypj-list-down">
+                            <label>
+                                <b>综合素质发展</b>
+                                <span>产品</span>
+                            </label>
+                            <p>综合素质发展是在新课程改革背景下帮助学生发展核心素养，并为学校记录学生素质发展的教育信息化产品。</p>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="qkypj-list trn">
+                        <a href="index_oa.html" target="_blank">
+                        <div class="qkypj-list-up">
+                            <div class="qkypj-list-img pic_set_m"></div>
+                            <div class="qkypj-list-uptxt">
+                                <span>校园管理信息化</span>
+                                <label class="oapj">校园管理服务</label>
+                            </div>
+                        </div>
+                        <div class="qkypj-list-down">
+                            <label>
+                                <b>校园管理服务</b>
+                                <span>产品</span>
+                            </label>
+                            <p>校园管理服务是为学校的管理，打造的一系统校园管理类信息化产品，有效的提高学校的校园管理工作效率。</p>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="qkypj-list mr0 trn">
+                        <a href="index_qky.html" target="_blank">
+                        <div class="qkypj-list-up">
+                            <div class="qkypj-list-img pic_set_r"></div>
+                            <div class="qkypj-list-uptxt">
+                                <span>教育信息化</span>
+                                <label class="otherpj">更多校园服务应用</label>
+                            </div>
+                        </div>
+                        <div class="qkypj-list-down">
+                            <label>
+                                <b>更多校园服务应用</b>
+                                <span>产品</span>
+                            </label>
+                            <p>更多全课云团队研发的教育信息化应用。</p>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- <div class="qkyabout clear">
+                    <div class="qkyabout-title abouttiltle"></div>
+                    <div class="qkyabout-cont fl">
+                        <div class="qkyabout-list">
+                            <label>
+                                <b>定位</b>
+                                <span>专注精品</span>
+                            </label>
+                            <p>全课云团队是全通教育集团旗下的专注产品研发教育类应用的专业技术团队， 信奉打造精品的价值理念，对每一款产品均不惜时间和成本代价，只求打磨出简约、 优美且给用户创造效率价值的技术性产品。优异的美学理解和深厚的技术积累，为家长、学生、教师、学校、教育局创造爱不释手的优秀产品。
+                            </p>
+                        </div>
+                        <div class="qkyabout-list">
+                            <label>
+                                <b>产品</b>
+                                <span>专注教育</span>
+                            </label>
+                            <p>综合素质发展、校园管理服务等产品是全课云团队以先进的信息与通信技术为基础，以物联化，集成化，智能化为触发点，通过云计算、大数据、互联网+等新技术手段研发的教育信息化软件，是将教学、科研、管理和校园生活进行充分融合，在传统校园基础上构建一个数字化、智能化校园空间，从而达到提升学校教学、科研水准，提高各项管理水平和工作效率的目的。
+                            </p>
+                        </div>
+                        <div class="qkyabout-list ">
+                            <label>
+                                <b>品质</b>
+                                <span>专注细节</span>
+                            </label>
+                            <p>全课云团队惟品质至上，每一项工作都力求完美，对细节不懈追求。一流的设计思维和审美思想，运用于传统的IT技术工作，从而创造出别具一格的优雅。人机交互极致简明，视觉构图平衡明快，让使用系统不再是枯燥的表格和按钮，成为一种享受。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="qkyabout-img aboutimg fr"></div>
+                </div> -->
+                <!-- <div class="qkycontact">
+                    <div class="qkycontact-title contacttiltle"></div>
+                    <form class="qkycontact-form">
+                        <div class="inp_list animated fadeInUp s_1s" >
+                            <input type="text" name="name" placeholder="NAME - 您的名字">
+                            <span>你的姓名:</span>
+                        </div>
+                        <div class="inp_list animated fadeInUp s_2s" >
+                            <input type="text" name="phone" placeholder="TEL - 联系电话">
+                            <span>联系电话:</span>
+                        </div>
+                        <div class="inp_list animated fadeInUp s_3s" >
+                            <input type="text" name="e_mall" placeholder="E-MALL - 邮箱">
+                            <span>E-MALL:</span>
+                        </div>
+                        <div class="inp_list animated fadeInUp s_4s" >
+                            <input type="text" name="yzm" placeholder="VARIFICATION CODE - 验证码">
+                            <span>验证码:</span>
+                            <a class="layout_yzm">
+                                <img src="../images/yzm.png">
+                            </a>
+                        </div>
+                        <div class="inp_list animated fadeInUp s_5s" >
+                            <button>提交</button>
+                        </div>
+                    </form>
+                    <div class="t_c co_z9">
+                        您所填写的内容将仅用于接受我们所提供最新产品及服务信息
+                        <br/> 您所填写的内容将经过加密处理，不会泄露您的联系信息
+                    </div>
+                </div> -->
+            </div>
+            <div class="qkybottom_box">
+                <div class="qkybottom clear">
+                    <div class="bottomlist">
+                        <div class="clear">
+                        <img src="../images/outindex/email.png" alt="" class="fl">
+                        <label  class="fl">E-mail 邮箱</label>
+                        </div>
+                        <span class="kuai">qky@qtone.cn</span>
+                    </div>
+                    <div class="bottomlist">
+                        <div class="clear">
+                        <img src="../images/outindex/calllogshortcut.png" alt="" class="fl">
+                        <label class="fl">TEL  电话</label>
+                        </div>
+                        <span class="kuai">4008883366</span>
+                        <span class="kuai">0760-88225790</span>
+                    </div>
+                    <div class="bottomlist">
+                        <div class="clear">
+                        <img src="../images/outindex/maps.png" alt="" class="fl">
+                        <label class="fl">ADD  地址</label>
+                        </div>
+                        <span class="kuai">广东省中山市中山</span><span>4路88号盛景尚峰5</span>
+                        <span> 座17-20楼</span>
+                    </div>
+                    <div class="bottomlist ewm">
+                        <img src="../images/outindex/qkyewm.png" alt="">
+                        <span>扫码关注全课云微信</span>
+                    </div>
+                </div>
+            </div>
+            <div class="qkyfoot">
+                    Copyright 1999-2018 全通教育股份有限公司 版权所有<a href="http://www.miibeian.gov.cn/ " target="_blank" >粤ICP备10021799号-34</a>
+            </div>
+            <!-- <div class="qkyfooter">
+                Copyright 1999-2018全通教育集团（广东）股份有限公司
+                <a href="http://www.miibeian.gov.cn/ " target="_blank" >粤ICP备10021799号-34</a>
+            </div> -->
+        </div>
+
+    </div>
+
+
+    <script language="JavaScript" charset="utf-8" src="../js/preloadjs-0.6.2.min.js"></script>
+    <script src="../js/sea.js"></script>
+    <script src="../js/seaconfig2.0.js"></script>
+    <script>
+        seajs.use(["jq", "run", "sw"], function (j, r, sw) {
+            r.qkyindex();
+        });
+    </script>
+</body>
+
+</html>
