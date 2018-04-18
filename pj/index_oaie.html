@@ -14,7 +14,7 @@
 
 <body class="qkybody">
     <!--加载层-->
-    <div class="loadprogress" id="loadprogress">
+    <!-- <div class="loadprogress" id="loadprogress">
         <div class="progress">
             <div class="progressyuan">
                 <div class="proleft pro">
@@ -28,7 +28,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!--浏览器判断层-->
     <div class="browser">
@@ -89,27 +89,27 @@
     <!--头部-->
     <div class="qkyheader">
         <div class="barnav clear">
-                <a class="logo fl witer" href="../index.html"></a>
-                <a class="logo fl black" href="../index.html"></a>
+                <a class="logo fl witer" href="../indexie.html"><img src="../images/qkylogo.png" alt=""></a>
+                <a class="logo fl black" href="../indexie.html"><img src="../images/qkylogo_black.png" alt=""></a>
             
             <a class="loginbut fr">登录云平台</a>
             <div class="fr qkyindex_nav clear ml20">
-                    <a href="../index.html">首页</a>
-                    <a href="index.html" class="active">产品介绍</a>
-                    <a href="../case">典型案例</a>
-                    <a href="../coop">渠道合作</a>
-                    <a href="../us">关于我们</a>
+                    <a href="../indexie.html">首页</a>
+                    <a href="indexie.html" class="active">产品介绍</a>
+                    <a href="../case/indexie.html">典型案例</a>
+                    <a href="../coop/indexie.html">渠道合作</a>
+                    <a href="../us/indexie.html">关于我们</a>
            </div>
         </div>
     </div>
 
     <!--中部-->
     <div class="qkycontent ">
-        <div class="page pjpage banneroa"></div>
+        <div class="page pjpage banneroa"><img src="../images/oa/banner.png" alt=""></div>
         <div class="pj qky_ oa">
             <div class="qkybox pt0">
                 <div class="qkyoa-about clear">
-                    <div class="qkyoa-tit oatit1"></div>
+                    <div class="qkyoa-tit oatit1"><img src="../images/oa/title1.png" alt=""></div>
                     <div class="oaabout">
                         <p>校园管理服务是为学校的校园管理，打造的一系列校园管理类信息化产品</p>
                         <p>帮助教育管理部门有效的提高学校的校园管理工作效率</p>
@@ -117,20 +117,20 @@
                     
                 </div>
                 <div class="qkyoa-pjs">
-                    <div class="qkyoa-tit oatit2"></div>
-                    <div class="oapjs"></div>
+                    <div class="qkyoa-tit oatit2"><img src="../images/oa/title2.png" alt=""></div>
+                    <div class="oapjs"><img src="../images/oa/oapjs.png" alt=""></div>
                 </div>
             </div>
             <hr class="setline oa">
-            <div class="qkyoa-page p1"></div>
+            <div class="qkyoa-page p1"><img src="../images/oa/p1.png" alt=""></div>
             <hr class="setline oa">
-            <div class="qkyoa-page p2"></div>
+            <div class="qkyoa-page p2"><img src="../images/oa/p2.png" alt=""></div>
             <hr class="setline oa">
-            <div class="qkyoa-page p3"></div>
+            <div class="qkyoa-page p3"><img src="../images/oa/p3.png" alt=""></div>
             <hr class="setline oa">
-            <div class="qkyoa-page p4"></div>
+            <div class="qkyoa-page p4"><img src="../images/oa/p4.png" alt=""></div>
             <hr class="setline oa">
-            <div class="qkyoa-page p5"></div>
+            <div class="qkyoa-page p5"><img src="../images/oa/p5.png" alt=""></div>
             
             <div class="qkybottom_box">
                 <div class="qkybottom clear">
@@ -170,14 +170,9 @@
         </div>
     </div>
 
-    <script language="JavaScript" charset="utf-8" src="../js/preloadjs-0.6.2.min.js"></script>
-    <script src="../js/sea.js"></script>
-    <script src="../js/seaconfig2.0.js"></script>
-    <script>
-        seajs.use(["jq", "run"], function (j, r) {
-            r.qkyoa();
-        });
-    </script>
+    <script src="../js/jquery-1.9.1.min.js"></script>
+    <script src="../js/ie.js"></script>
+    <script>qkyoa();</script>
 </body>
 
 </html>

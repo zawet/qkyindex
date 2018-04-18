@@ -118,8 +118,8 @@ width:600px; height: 500px;  box-sizing: border-box; padding: 10px;background:ur
 .txt img{width: 100%;}
 .txt.txt100{width: 53%;}
 .txt.txt200{width: 35%;}
-.txt.txt300{width:41%;}
-.txt.txt400{width: 48%;}
+.txt.txt300{width:36%;}
+.txt.txt400{width: 42%; margin-top: 21%;}
 
 .icon-but a{ width: 60px; height: 60px; position: absolute; top: 50%; margin-top: -30px; display: block; z-index: 99999; opacity: 0.2;}
 .icon-but a:hover{opacity:0.7;}
@@ -222,7 +222,7 @@ width:600px; height: 500px;  box-sizing: border-box; padding: 10px;background:ur
 
 /*典型案例*/
 .qkycase_box{ width: 100%; max-width: 1366px; margin: -20% auto 0;  position: relative; z-index:99999999 ;box-sizing: border-box; padding: 50px 25px;}
-.qkycase_list{ width: calc(100%/3 - 50px); overflow:hidden; margin:0 25px 50px; background: #fff; float: left;box-shadow: 0 6px 30px rgba(0,0,0,0.1);height:600px; box-sizing: border-box;}
+.qkycase_list{ width:30%; overflow:hidden; margin:0 0 50px 2.5%; background: #fff; float: left;box-shadow: 0 6px 30px rgba(0,0,0,0.1);height:640px; box-sizing: border-box;}
 .listimg_box{position: relative; top: 0; left: 0; width: 100%; height: 200px; overflow: hidden;}
 .listimg_box img{ width: 100%; position: relative; }
 .listimg_box .listimg_mask{ opacity: 0; background: url("../images/jb1.png") repeat-y 0 0; background-size: 100%; position: absolute; top: 0; left: 0; height: 100%; width: 100%;}
@@ -265,7 +265,7 @@ width:600px; height: 500px;  box-sizing: border-box; padding: 10px;background:ur
 .bottomlist.ewm img{ width:auto ; max-width: 60%; display: block; margin: auto;}
 .bottomlist.ewm span{  text-align: center; font-size:16px; padding: 0;}
 .qkyfoot{ font-size: 14px; padding: 10px; width: 100%; box-sizing: border-box; background: #30383e; color: #96999d; text-align: center; border-top: 1px solid #3b4349;}
-
+.qkyfoot a{color: #a6aaad;}
 @media screen and (max-width: 1366px) {
   .qkypage_coop img{ max-width:80%; }
   .zh-login-box{ width:26%;}
@@ -278,19 +278,19 @@ width:600px; height: 500px;  box-sizing: border-box; padding: 10px;background:ur
   .txt.txt100 { width: 60%;}
   .txt.txt200 { width:43%;}
   .txt.txt300 { width:40%;}
-  .txt.txt400 { width: 46%;}
+  .txt.txt400 { width: 42%;}
   .qkycloud_mash .cloud.one{bottom:12%;}
   .qkycloud_mash .cloud.two{bottom:2%;}
   .qkycloud_mash .cloud.three{bottom:-5%;}
-  .qkycloud_mash.casecloud .cloud.one{bottom:13%;}
-  .qkycloud_mash.casecloud .cloud.two{bottom:-2%;}
-  .qkycloud_mash.casecloud .cloud.three{bottom:-16%;}
-  .qkycloud_mash.coopcloud .cloud.one{bottom:10%;}
-  .qkycloud_mash.coopcloud .cloud.two{bottom:0%;}
-  .qkycloud_mash.coopcloud .cloud.three{bottom:-10%;}
-  .qkycloud_mash.uscloud .cloud.one{bottom:13%;}
-  .qkycloud_mash.uscloud .cloud.two{bottom:-2%;}
-  .qkycloud_mash.uscloud .cloud.three{bottom:-16%;}
+  .qkycloud_mash.casecloud .cloud.one{bottom:12%;}
+  .qkycloud_mash.casecloud .cloud.two{bottom:-3%;}
+  .qkycloud_mash.casecloud .cloud.three{bottom:-17%;}
+  .qkycloud_mash.coopcloud .cloud.one{bottom:9%;}
+  .qkycloud_mash.coopcloud .cloud.two{bottom:-1%;}
+  .qkycloud_mash.coopcloud .cloud.three{bottom:-11%;}
+  .qkycloud_mash.uscloud .cloud.one{bottom:12%;}
+  .qkycloud_mash.uscloud .cloud.two{bottom:-3%;}
+  .qkycloud_mash.uscloud .cloud.three{bottom:-17%;}
 
   .qkycase_list{ width: calc(100%/2 - 50px);}
   .qkycase_list.issrc{ overflow: auto; height:auto; width: calc(100% - 50px);}
