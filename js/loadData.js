@@ -21,10 +21,8 @@ define({ //dedine闭包
             {id: "stutit1",src: "../images/stus/stutit1.png"},
             {id: "stutit2",src: "../images/stus/stutit2.png"},
             {id: "stupjs",src: "../images/stus/stupjs.png"},
-            {id: "set_a",src: "../images/stus/set_a.png"},
-            {id: "set_b",src: "../images/stus/set_b.png"},
-            {id: "set_c",src: "../images/stus/set_c.png"},
-            {id: "set_d",src: "../images/stus/set_d.png"},
+            {id: "set_a",src: "../images/stus/set_a_new2.png"},
+            
             {id: "set_e",src: "../images/stus/set_e.png"},
             {id: "set_f",src: "../images/stus/set_f.png"},
             {id: "set_g",src: "../images/stus/set_g.png"}
@@ -37,14 +35,17 @@ define({ //dedine闭包
         {id: "p1",src: "../images/oa/p1.png"},
         {id: "p2",src: "../images/oa/p2.png"},
         {id: "p3",src: "../images/oa/p3.png"},
-        {id: "p4",src: "../images/oa/p4.png"}
-        
+        {id: "p4",src: "../images/oa/p4.png"},
+        {id: "p5",src: "../images/oa/p5.png"}
         ],
         qky:[
             {id: "banner3",src: "../images/qkys/banner3.png"},
             {id: "qkytit1",src: "../images/qkys/qkytit1.png"},
             {id: "qkypjs",src: "../images/qkys/qkypjs.png"},
-            {id: "qkyset",src: "../images/qkys/set_one.png"}
+            {id: "qkyset",src: "../images/qkys/set_one.png"},
+            {id: "set_b",src: "../images/stus/set_b.png"},
+            {id: "set_c",src: "../images/stus/set_c.png"},
+            {id: "set_d",src: "../images/stus/set_d.png"}
             
             ]
     });

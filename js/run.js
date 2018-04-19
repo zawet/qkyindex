@@ -1,10 +1,14 @@
 define(function (require, exports) { //dedine闭包  
 	var loads=require("./load");//加载机制引用
 	var loadData=require("./loadData");//图片资源引用
+function isie(url){
+	if (  myBrowser() =="IE8" || myBrowser() == "IE9"|| myBrowser() == "IE10") {
+		window.location.href=url;
+	}
+}
 
-	
-	
-	exports.index = function () {
+exports.index = function () {
+	isie("indexie.html");
 		loads.pageimg($(".page"), 1920, 1080);
 		window.onresize = function () {
 			loads.pageimg($(".page"), $(window).width(), $(window).height());
@@ -46,6 +50,7 @@ define(function (require, exports) { //dedine闭包
 	}
 
 	exports.case= function () {
+		isie("indexie.html");
 		loads.pageimg($(".page"), 1920,1080);
 		window.onresize = function () {
 			loads.pageimg($(".page"),1920, 1080);
@@ -59,6 +64,7 @@ define(function (require, exports) { //dedine闭包
 		
 	}
 	exports.coop= function () {
+		isie("indexie.html");
 		loads.pageimg($(".page"), 1920,1080);
 		window.onresize = function () {
 			loads.pageimg($(".page"),1920, 1080);
@@ -72,6 +78,7 @@ define(function (require, exports) { //dedine闭包
 		
 	}
 	exports.us= function () {
+		isie("indexie.html");
 		loads.pageimg($(".page"), 1920,1080);
 		window.onresize = function () {
 			loads.pageimg($(".page"),1920, 1080);
@@ -86,10 +93,7 @@ define(function (require, exports) { //dedine闭包
 	}
 
 	exports.qkyindex = function () {
-		// if (myBrowser() == 8 || myBrowser() == 9) {
-		// 	window.location.href = "index-ie89.html";
-		// }
-
+		isie("indexie.html");
 		top2(document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop);
 		$(window).scroll(function(){
 			 var body_scr=document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
@@ -123,8 +127,8 @@ define(function (require, exports) { //dedine闭包
 		login();
 	}
 
-
 	exports.qkystu = function () {
+		isie("index_stuie.html");
 		top2(document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop);
 		$(window).scroll(function(){
 			 var body_scr=document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
@@ -142,6 +146,7 @@ define(function (require, exports) { //dedine闭包
 	}
 
 	exports.qkyoa = function () {
+		isie("index_oaie.html");
 		top2(document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop);
 		$(window).scroll(function(){
 			 var body_scr=document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
@@ -158,6 +163,7 @@ define(function (require, exports) { //dedine闭包
 		login();
 	}
 	exports.qky = function () {
+		isie("index_qkyie.html");
 		top2(document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop);
 		$(window).scroll(function(){
 			 var body_scr=document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
@@ -176,7 +182,7 @@ define(function (require, exports) { //dedine闭包
 
 	function login(){
 		$(".loginbut").click(function () {
-			if ( myBrowser() == 8) {
+			if ( myBrowser() == "IE8") {
 				//ie7 8显示提示换高端浏览器
 				$(".browser").show();
 				$(".browser_close").click(function () {
@@ -219,29 +225,38 @@ define(function (require, exports) { //dedine闭包
 
 	//浏览器判断
 	function myBrowser() {
-		var userAgent = navigator.userAgent; //取得浏览器的userAgent字符串
-		var isOpera = userAgent.indexOf("Opera") > -1; //判断是否Opera浏览器
-		var isIE = userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1 && !isOpera; //判断是否IE浏览器
-		var isFF = userAgent.indexOf("Firefox") > -1; //判断是否Firefox浏览器
-		var isSafari = userAgent.indexOf("Safari") > -1; //判断是否Safari浏览器
-		if (isIE) {
-			var IE5 = IE55 = IE6 = IE7 = IE8 = false;
-			var reIE = new RegExp("MSIE (\\d+\\.\\d+);");
-			reIE.test(userAgent);
-			var fIEVersion = parseFloat(RegExp["$1"]);
-			IE55 = fIEVersion == 5.5;
-			IE6 = fIEVersion == 6.0;
-			IE7 = fIEVersion == 7.0;
-			IE8 = fIEVersion == 8.0;
-			IE9 = fIEVersion == 9.0;
-			return fIEVersion;
-		} //isIE end
-		if (isFF) {
-			return "FF";
-		}
-		if (isOpera) {
-			return "Opera";
-		}
+		var userAgent = navigator.userAgent; //取得浏览器的userAgent字符串 
+		var isOpera = userAgent.indexOf("Opera") > -1; //判断是否Opera浏览器 
+		var isIE = userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1 && !isOpera; //判断是否IE浏览器 
+		var isEdge = userAgent.indexOf("Windows NT 6.1; Trident/7.0;") > -1 && !isIE; //判断是否IE的Edge浏览器 
+		var isFF = userAgent.indexOf("Firefox") > -1; //判断是否Firefox浏览器 
+		var isSafari = userAgent.indexOf("Safari") > -1 && userAgent.indexOf("Chrome") == -1; //判断是否Safari浏览器 
+		var isChrome = userAgent.indexOf("Chrome") > -1 && userAgent.indexOf("Safari") > -1; //判断Chrome浏览器 
+	   
+		if (isIE)  
+		{ 
+		   var reIE = new RegExp("MSIE (\\d+\\.\\d+);"); 
+		   reIE.test(userAgent); 
+		   var fIEVersion = parseFloat(RegExp["$1"]); 
+		   if(fIEVersion == 7) 
+		   { return "IE7";} 
+		   else if(fIEVersion == 8) 
+		   { return "IE8";} 
+		   else if(fIEVersion == 9) 
+		   { return "IE9";} 
+		   else if(fIEVersion == 10) 
+		   { return "IE10";} 
+		   else if(fIEVersion == 11) 
+		   { return "IE11";} 
+		   else
+		   { return "0"}//IE版本过低 
+		 }//isIE end 
+		   
+		 if (isFF) { return "FF";} 
+		 if (isOpera) { return "Opera";} 
+		 if (isSafari) { return "Safari";} 
+		 if (isChrome) { return "Chrome";} 
+		 if (isEdge) { return "Edge";} 
 	}
 	//辅助函数
 	exports.isNull = function (data) {
