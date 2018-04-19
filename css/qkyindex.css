@@ -156,7 +156,7 @@ width:600px; height: 500px;  box-sizing: border-box; padding: 10px;background:ur
 .qkypiao_mash .piao.one{top:22%;left:  10%;}
 .qkypiao_mash .piao.two{top: 54%;left:  30%;}
 .qkypiao_mash .piao.three{top: 27%;left: 52%;}
-.qkypiao_mash .piao.four{top:5%;left:  78%;}
+.qkypiao_mash .piao.four{top:10%;left:  78%;}
 .qkypiao_mash .piao.five{top: 33%;left: 88%;}
 
 @keyframes piao {
