@@ -210,6 +210,7 @@ width:600px; height: 500px;  box-sizing: border-box; padding: 10px;background:ur
 .join_select a{ display: block; padding: 10px 20px; color: #666; font-size:16px; }
 .join_select a:hover{ background: #f3f5f6; color: #42b2e0;}
 .join_yzmbtn{ position: absolute; top: 0; right: 0; z-index: 666;  width: 100px; height: 50px; background: #2aa0fc; color: #fff; border-radius: 0 6px 6px 0; text-align: center; line-height: 50px;}
+.join_yzmbtn.un{ background: #ddd; color: #999;}
 .join_radio{ position: relative; z-index: 22; height: 50px; width: 100%; padding-left: 100px;}
 .join_radio a{ padding: 5px 20px; line-height: 30px;  color: #666; margin-top: 5px; float: left;border-radius: 4px; margin-right: 10px;}
 .join_radio a.active,.join_radio a:hover{ background: #2aa0fc; color: #fff;}
@@ -218,7 +219,8 @@ width:600px; height: 500px;  box-sizing: border-box; padding: 10px;background:ur
 .join_chobox a{ display: block; float: left; width: 16px; height: 16px;  border: 1px solid #ddd; border-radius: 2px; background: #fff;}
 .join_chobox a b{ width: 10px; height: 10px;  background:#fff; margin: 3px; display: block;}
 .join_chobox span{ color: #2aa0fc; float: left; font-size: 14px; line-height:20px; margin-left: 5px;}
-.join_chobox.active a b{ background: #2aa0fc;}
+.join_chobox.active a{border-color: #2aa0fc;}
+.join_chobox.active a b{ background: #2aa0fc; }
 
 /*典型案例*/
 .qkycase_box{ width: 100%; max-width: 1366px; margin: -20% auto 0;  position: relative; z-index:99999999 ;box-sizing: border-box; padding: 50px 25px;}
