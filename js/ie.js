@@ -9,17 +9,15 @@ function isunie(url){
 var h=$(window).height();
 $(".qkycontent").css("height",h+"px");
 
-$(".browser").show();
-$(".browser_close").click(function () {
-    $(".browser").fadeOut(200);
-});
+// $(".browser").show();
+// $(".browser_close").click(function () {
+//     $(".browser").fadeOut(200);
+// });
 
 function  indexss() {
-    
     isunie("index.html");
     tops(document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop);
     $(window).scroll(function () {
-         //console.log(document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop);
         var body_scr = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
          tops(body_scr);
      });
@@ -173,7 +171,7 @@ var us = function () {
 
 function login() {
     $(".loginbut").click(function () {
-        if (myBrowser() == "IE8"|| myBrowser() == "IE9") {
+        if (myBrowser() == "IE8") {
             //ie7 8显示提示换高端浏览器
             $(".browser").show();
             $(".browser_close").click(function () {
@@ -195,12 +193,16 @@ function tops(scro) {
         $(".qkyheader").removeClass("notop");
 
     }
-    if (scro >= 500) {
-
+    if (myBrowser() == "IE8") {
         $(".zh-login-box").removeClass("in-onepage");
-    } else {
+    }else{
+        if (scro >= 500) {
 
-        $(".zh-login-box").addClass("in-onepage");
+            $(".zh-login-box").removeClass("in-onepage");
+        } else {
+
+            $(".zh-login-box").addClass("in-onepage");
+        }
     }
 }
 
