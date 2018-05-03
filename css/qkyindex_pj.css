@@ -60,7 +60,7 @@ width:600px; height: 500px;  box-sizing: border-box; padding: 10px;background:ur
 .qkyheader.notop .qkyindex_nav a:hover{ color: #999;}
 .qkyindex_nav a.active{ color: #06658d !important ; background:rgba(255,255,255,0.4);border-radius: 26px;}
  /*login框*/
-.login_{ position: relative; width: 100%; max-width: 1800px; padding: 5px 0; margin: 76px auto 0;}
+.login_{ position: relative; width: 100%; max-width: 1800px;margin: 0 auto ;}
 .zh-login-box{ width:20%; right: 10px; top:-500px; position: fixed; z-index: 6666; padding: 20px; box-sizing: border-box;box-shadow: 0 6px 30px rgba(0,0,0,0.1); border-radius: 6px;background: #fff; }
 .zh-login-box.open{ top:89px;}
 .zh-login-title{ text-align: center; font-size: 26px; color: #535353; }

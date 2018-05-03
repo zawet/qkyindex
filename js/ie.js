@@ -7,7 +7,8 @@ function isunie(url){
 }
  
 var h=$(window).height();
-    $(".qkycontent").css("height",h+"px");
+$(".qkycontent").css("height",h+"px");
+
  function  indexss() {
     isunie("index.html");
 
