@@ -9,9 +9,14 @@ function isunie(url){
 var h=$(window).height();
 $(".qkycontent").css("height",h+"px");
 
- function  indexss() {
-    isunie("index.html");
+$(".browser").show();
+$(".browser_close").click(function () {
+    $(".browser").fadeOut(200);
+});
 
+function  indexss() {
+    
+    isunie("index.html");
     tops(document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop);
     $(window).scroll(function () {
          //console.log(document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop);
@@ -39,10 +44,6 @@ $(".qkycontent").css("height",h+"px");
     });
     login();
 
-    
-
-
-
     $(".join_btn").click(function () {
         $(this).parent().find(".join_select").slideToggle(200);
     });
@@ -53,29 +54,6 @@ $(".qkycontent").css("height",h+"px");
     $(".join_radio").on("click", "a", function () {
         $(this).addClass("active").siblings().removeClass("active");
     })
-}
-
-
-function scroll() {
-    if(window.pageYOffset != null)  //  ie9+ 和其他浏览器
-    {
-        return {
-            left: window.pageXOffset,
-            top: window.pageYOffset
-        }
-    }
-    else if(document.compatMode == "CSS1Compat")  // 声明的了 DTD
-      // 检测是不是怪异模式的浏览器 -- 就是没有 声明<!DOCTYPE html>
-    {
-        return {
-            left: document.documentElement.scrollLeft,
-            top: document.documentElement.scrollTop
-        }
-    }
-    return { //  剩下的肯定是怪异模式的
-        left: document.body.scrollLeft,
-        top: document.body.scrollTop
-    }
 }
 
 
@@ -195,7 +173,7 @@ var us = function () {
 
 function login() {
     $(".loginbut").click(function () {
-        if (myBrowser() == "IE8") {
+        if (myBrowser() == "IE8"|| myBrowser() == "IE9") {
             //ie7 8显示提示换高端浏览器
             $(".browser").show();
             $(".browser_close").click(function () {
