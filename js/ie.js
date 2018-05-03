@@ -6,13 +6,21 @@ function isunie(url){
      }
 }
  
-
+var h=$(window).height();
+    $(".qkycontent").css("height",h+"px");
  function  indexss() {
     isunie("index.html");
+
+    tops(document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop);
+    $(window).scroll(function () {
+         //console.log(document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop);
+        var body_scr = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
+         tops(body_scr);
+     });
     pageimg($(".page"), 1920, 1080);
-    window.onresize = function () {
+     window.onresize = function () {
         pageimg($(".page"), $(window).width(), $(window).height());
-    }
+     }
 
     var inbox = new Swiper(".inbox", {
         //initialSlide :1,
@@ -29,11 +37,8 @@ function isunie(url){
         }
     });
     login();
-    tops(document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop);
-    $(window).scroll(function () {
-        var body_scr = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
-        tops(body_scr);
-    });
+
+    
 
 
 
@@ -48,6 +53,30 @@ function isunie(url){
         $(this).addClass("active").siblings().removeClass("active");
     })
 }
+
+
+function scroll() {
+    if(window.pageYOffset != null)  //  ie9+ 和其他浏览器
+    {
+        return {
+            left: window.pageXOffset,
+            top: window.pageYOffset
+        }
+    }
+    else if(document.compatMode == "CSS1Compat")  // 声明的了 DTD
+      // 检测是不是怪异模式的浏览器 -- 就是没有 声明<!DOCTYPE html>
+    {
+        return {
+            left: document.documentElement.scrollLeft,
+            top: document.documentElement.scrollTop
+        }
+    }
+    return { //  剩下的肯定是怪异模式的
+        left: document.body.scrollLeft,
+        top: document.body.scrollTop
+    }
+}
+
 
 var qkyindex = function () {
     isunie("index.html");
