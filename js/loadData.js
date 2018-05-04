@@ -2,11 +2,11 @@
 define({ //dedine闭包  
     onemf: [{id: "witer",src: "../images/qkylogo.png"},{id: "black",src: "../images/qkylogo_black.png"}],
     index:[
-            {id: "page1", src: "../images//indexs/page110.png"},
+            {id: "page1", src: "../images//indexs/banner1.png"},
             {id: "txt100",src: "../images/indexs/txt100.png"},
-            {id: "page2",src: "../images/indexs/page200.png"},
+            {id: "page2",src: "../images/indexs/banner2.png"},
             {id: "txt200",src: "../images/indexs/txt200.png"},
-            {id: "page3",src: "../images/indexs/page310.png"},
+            {id: "page3",src: "../images/indexs/banner3.png"},
             {id: "txt300",src: "../images/indexs/txt301.png"},
             {id: "pic_set_l",src: "../images/indexs/pic_set_l.png"},
             {id: "pic_set_m",src: "../images/indexs/pic_set_m.png"},
@@ -22,7 +22,6 @@ define({ //dedine闭包
             {id: "stutit2",src: "../images/stus/stutit2.png"},
             {id: "stupjs",src: "../images/stus/stupjs.png"},
             {id: "set_a",src: "../images/stus/set_a_new2.png"},
-            
             {id: "set_e",src: "../images/stus/set_e.png"},
             {id: "set_f",src: "../images/stus/set_f.png"},
             {id: "set_g",src: "../images/stus/set_g.png"}

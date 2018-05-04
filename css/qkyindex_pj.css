@@ -107,10 +107,10 @@ width:600px; height: 500px;  box-sizing: border-box; padding: 10px;background:ur
 .icon-but a.right{ right: 4%;}
 .icon-but a img{ width: 100%; height: 100%;}
 
-.qky_{ position: relative; width: 100%; z-index: 666;  box-sizing: border-box; background: url("../images/index/bg.png") no-repeat 0 100%;}
+.qky_{ position: relative; width: 100%; z-index: 666;  box-sizing: border-box; background: url("../images/indexs/bg.png") no-repeat 0 100%;}
 .qky_.pj{background:none;}
 .qky_.oa{ padding-bottom: 0px;}
-.qkybox{width:92%; max-width: 1440px; padding:3% 0; box-sizing: border-box; margin: 0 auto;}
+.qkybox{width:80%; padding:3% 0; box-sizing: border-box; margin: 0 auto;}
 
 .qkypj{ width:100%; margin-bottom: 30px;}
 .qkypj-list{ float: left; width: 30%; margin-right: 5%; box-sizing: border-box;}
@@ -162,7 +162,7 @@ width:600px; height: 500px;  box-sizing: border-box; padding: 10px;background:ur
 .qkyfooter a{ color: #2aa0fc}
 .qkyfooter.oa{ line-height: 290px; height: 160px;border: none; background: url("../images/oa/oafoot.png") no-repeat 0 0; background-size: 100% 100%; color: #fff; padding: 0;}
 
-.qkystu-about{ margin-bottom:80px;}
+.qkystu-about{ margin-bottom:0px;}
 .stuabout{ width: 64%; box-sizing: border-box; padding: 0 10px; }
 .stuabout p{line-height: 22px; text-indent: 2em; font-size: 14px; color: #333;}
 .qkyabouts{ width: 64%; box-sizing: border-box; padding: 20px 10px; }
@@ -175,12 +175,12 @@ width:600px; height: 500px;  box-sizing: border-box; padding: 10px;background:ur
 .qkystu-tit.qkytit1{width: 28%}
 .stupjs img{width:90%; max-width: 1236px; margin: 5% auto; display: block;}
 
-.qkystu-set img{ display: block; margin:0 auto; max-width: 92%;}
+.qkystu-set img{ display: block; margin:0 auto; max-width:80%;}
 
 .qkystu-set{ padding: 5% 0;}
 
 
-.setline{ width: 92%; border: none; border-top:1px solid #ddd; display: block; margin: 0 auto;}
+.setline{ width: 80%; border: none; border-top:1px solid #ddd; display: block; margin: 0 auto;}
 .setline.oa{ border-top:1px  dashed #bbb; max-width: 1440px;}
 
 .qkyoa-about{ margin:-7% 0 15%;}
@@ -196,9 +196,9 @@ width:600px; height: 500px;  box-sizing: border-box; padding: 10px;background:ur
 .qkybottom_box{ background: #364246; width: 100%;}
 .qkybottom{ width: 100%; max-width:1366px; box-sizing: border-box; margin:0 auto 0; padding: 15px 0 10px;}
 .bottomlist{ float: left; width: 25%; box-sizing: border-box; padding: 30px 10px;}
-.bottomlist img{ width: 40px; margin-right: 15px;}
-.bottomlist label{ color: #04aef7;font-size: 30px; line-height: 40px;}
-.bottomlist span{ display: block; color: #92a0b3; font-size: 24px; line-height: 32px; width: 100%; box-sizing: border-box; padding-left: 60px; margin-top: 10px;}
+.bottomlist img{ width: 40px; margin-right:10px; margin-left: 40px;}
+.bottomlist label{ color: #04aef7;font-size:26px; line-height: 40px;}
+.bottomlist span{ display: block; color: #92a0b3; font-size: 20px; line-height: 28px; width: 100%; box-sizing: border-box; padding-left:90px; margin-top: 10px;}
 .bottomlist.ewm{ padding: 10px 0;}
 .bottomlist.ewm img{ width:auto ; max-width: 60%; display: block; margin: auto;}
 .bottomlist.ewm span{  text-align: center; font-size:16px; padding: 0;}
