@@ -147,10 +147,11 @@ filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 .qkytitbox.coop{ height: 100%;}
 .qkytitbox.us{ height: 100%;}
 .qkytitle-big{ position: absolute; width: 70%; left: 15%; top: 20%;  color: #fff; box-sizing: border-box;  z-index:77 ;}
-
-.qkytitle-big label{font-size:40px; width:40%; display: block; padding-bottom: 20px; margin-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,0.4);}
+.qkytitle-big.coop{ top: 20%;}
+.qkytitle-big.us{ top: 25%;}
+.qkytitle-big label{font-size:36px; width:76%; display: block; padding-bottom: 20px; margin-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,0.4);}
 .qkytitle-big.coop label{ width:70%;}
-.qkytitle-big span{font-size:18px ; display: block; line-height: 34px; color: #f9f9f9;}
+.qkytitle-big span{font-size:20px ; display: block; line-height: 34px; color: #f9f9f9; }
 .qkycooptxt{position: absolute; width: 70%; left: 15%; top: 20%; box-sizing: border-box; padding-left: 2%; z-index:77 ;}
 .qkycooptxt img{ max-width: 60%;}
 /*滑动层*/
@@ -280,9 +281,9 @@ filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 .qkycase_list label{ padding: 10px 20px 5px; display: block; font-size:20px; font-weight: bold; color: #325063;}
 .qkycase_list.issrc label{ position: relative; z-index: 44; color: #fff; line-height: 32px; margin-top:40px; text-align: center;}
 .qkycase_list span{ padding: 0 20px; display: block; font-size:16px; color: #527083;}
-.qkycase_list.issrc span{ padding-bottom: 10px; box-sizing: border-box; height: 400px; overflow: auto; width:103%; padding-right:3%; }
+.qkycase_list.issrc span{ padding-bottom: 10px; box-sizing: border-box; height: 440px; overflow: auto; width:103%; padding-right:3%; }
 .qkycase_list.issrc span a{ display: block; padding:  10px; background: #ecf2f8; text-align: center; margin-top: 10px; }
-.qkycase_list p{ padding:  20px; display: block; font-size:14px; color: #92a0b3; line-height:30px; text-indent: 2em;}
+.qkycase_list p{ padding:  20px; display: block; font-size:14px; color: #92a0b3; line-height:30px; text-indent: 2em; text-align: justify;}
 
 
 .qkypage_coop{ width: 100%; max-width: 1366px; box-sizing: border-box; padding: 0 20px; margin: -8% auto 20%; position: relative; z-index: 99999999;}
@@ -342,6 +343,7 @@ filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   .qkycloud_mash.uscloud .cloud.two{bottom:-3%;}
   .qkycloud_mash.uscloud .cloud.three{bottom:-17%;}
 
+  .qkytitle-big label{ width: 100%;}
   .qkycase_list{ width: calc(100%/2 - 50px);}
   .qkycase_list.issrc{ overflow: auto; height:auto; width: calc(100% - 50px);}
   .qkycase_list.issrc span{ width: 100%; padding: 10px; height:auto;}
