@@ -149,8 +149,7 @@ filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 .qkytitle-big{ position: absolute; width: 70%; left: 15%; top: 20%;  color: #fff; box-sizing: border-box;  z-index:77 ;}
 .qkytitle-big.coop{ top: 20%;}
 .qkytitle-big.us{ top: 25%;}
-.qkytitle-big label{font-size:36px; width:76%; display: block; padding-bottom: 20px; margin-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,0.4);}
-.qkytitle-big.coop label{ width:70%;}
+.qkytitle-big label{font-size:36px; display: inline-block; padding-bottom: 20px; margin-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,0.4);}
 .qkytitle-big span{font-size:20px ; display: block; line-height: 34px; color: #f9f9f9; }
 .qkycooptxt{position: absolute; width: 70%; left: 15%; top: 20%; box-sizing: border-box; padding-left: 2%; z-index:77 ;}
 .qkycooptxt img{ max-width: 60%;}
