@@ -10,7 +10,9 @@
   background-image:-webkit-linear-gradient(top,rgba(16,147,247,1),rgba(16,147,147,1));
   background-image:linear-gradient(top,rgba(16,147,247,1),rgba(16,147,147,1));
 }
+.loadprogress.inout{ z-index: 9; background: none; opacity: 0.1; position: absolute;}
 .progress{position: absolute; top: 50%; left: 0;  width: 100%; margin-top: -60px;}
+.loadprogress.inout .progress{ top: 30%;}
 .progresslogo img{ width: 14%; margin: 0 auto 10px; display: block;}
 .progresszi{ width: 60%; height: 4px; background: rgba(255,255,255,0.6);border-radius: 4px; margin: 0 auto;}
 .progresszi b{ display: block; height: 100%; width: 2%; background: #fff;border-radius: 4px; max-width: 100%;}

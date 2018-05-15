@@ -9,16 +9,37 @@ function isie(url){
 
 exports.index = function () {
 	isie("indexie.html");
+
+	var outindex=[{
+		id: "bg1", src: "images/outindex/bg1.png"},
+		{id: "bg2",src: "images/outindex/bg2.png"},
+		{id: "bg3",src: "images/outindex/bg3.png"},
+		{id: "bg4",src: "images/outindex/bg4.png"}
+	]
+	loads.startPreload(outindex,function(){
+		$(".loadprogress").fadeOut(200);
+		for (var key in loads.preload._loadItemsById) {
+            $("." + key).html(loads.preload.getResult(key));
+		}
 		loads.pageimg($(".page"), 1920, 1080);
 		window.onresize = function () {
-			loads.pageimg($(".page"), $(window).width(), $(window).height());
+			loads.pageimg($(".page"), 1920, 1080);
 		}
+
+	})
+		
 	
 		var inbox = new Swiper(".inbox", {
 			//initialSlide :1,
 			//pagination : '.swiper-pagination',
 			//paginationClickable :true,
-			autoplay : 3000
+			autoplay : 3000,
+			onLazyImageReady: function(swiper, slide, image){
+				alert('延迟加载图片');
+				console.log(swiper);//Swiper实例
+				console.log(slide);//哪个slide里面的图片在加载
+				console.log(image);//哪个图片在加载
+			  }
 		});
 
 		$(".icon-but a").click(function () {
@@ -51,10 +72,20 @@ exports.index = function () {
 
 	exports.case= function () {
 		isie("indexie.html");
-		loads.pageimg($(".page"), 1920,1080);
-		window.onresize = function () {
-			loads.pageimg($(".page"),1920, 1080);
-		}
+		var outcaseindex=[{
+			id: "casebg2", src: "../images/case/casebg2.png"}
+		]
+		loads.startPreload(outcaseindex,function(){
+			$(".loadprogress").fadeOut(200);
+			for (var key in loads.preload._loadItemsById) {
+				$("." + key).html(loads.preload.getResult(key));
+			}
+			loads.pageimg($(".page"), 1920, 1080);
+			window.onresize = function () {
+				loads.pageimg($(".page"), 1920, 1080);
+			}
+	
+		})
 		login();
 		top2(document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop);
 		$(window).scroll(function(){
@@ -65,10 +96,20 @@ exports.index = function () {
 	}
 	exports.coop= function () {
 		isie("indexie.html");
-		loads.pageimg($(".page"), 1920,1080);
-		window.onresize = function () {
-			loads.pageimg($(".page"),1920, 1080);
-		}
+		var outcoopbgindex=[{
+			id: "coopbg", src: "../images/coop/coopbg.png"}
+		]
+		loads.startPreload(outcoopbgindex,function(){
+			$(".loadprogress").fadeOut(200);
+			for (var key in loads.preload._loadItemsById) {
+				$("." + key).html(loads.preload.getResult(key));
+			}
+			loads.pageimg($(".page"), 1920, 1080);
+			window.onresize = function () {
+				loads.pageimg($(".page"), 1920, 1080);
+			}
+	
+		})
 		login();
 		top2(document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop);
 		$(window).scroll(function(){
@@ -79,6 +120,21 @@ exports.index = function () {
 	}
 	exports.us= function () {
 		isie("indexie.html");
+		
+		var outusbg2index=[{
+			id: "usbg2", src: "../images/us/usbg2.png"}
+		]
+		loads.startPreload(outusbg2index,function(){
+			$(".loadprogress").fadeOut(200);
+			for (var key in loads.preload._loadItemsById) {
+				$("." + key).html(loads.preload.getResult(key));
+			}
+			loads.pageimg($(".page"), 1920, 1080);
+			window.onresize = function () {
+				loads.pageimg($(".page"), 1920, 1080);
+			}
+	
+		})
 		loads.pageimg($(".page"), 1920,1080);
 		window.onresize = function () {
 			loads.pageimg($(".page"),1920, 1080);
