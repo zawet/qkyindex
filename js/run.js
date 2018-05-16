@@ -67,7 +67,17 @@ exports.index = function () {
 		});
 		$(".join_radio").on("click","a",function(){
 			$(this).addClass("active").siblings().removeClass("active");
-		})
+		});
+		$(".showxy").click(function(){
+			$(".xybox").slideDown(200);
+		});
+		$(".xyclose").click(function(){
+			$(".xybox").slideUp(200);
+		});
+		$(".join_chobox").click(function(){
+			$(this).toggleClass("active")
+		});
+		
 	}
 
 	exports.case= function () {

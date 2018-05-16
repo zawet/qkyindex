@@ -318,6 +318,20 @@ filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 .bottomlist.ewm span{  text-align: center; font-size:16px; padding: 0;}
 .qkyfoot{ font-size: 14px; padding: 10px; width: 100%; box-sizing: border-box; background: #30383e; color: #96999d; text-align: center; border-top: 1px solid #3b4349;}
 .qkyfoot a{color: #a6aaad;}
+
+.showxy{ cursor: pointer;}
+.xybox{ position: fixed; width: 96%; left:2%; top: 2%; border-radius: 8px;box-shadow: 0 1px 8px #ddd; display: none;
+   background: #fff; z-index: 6666666666666; height: 96%;box-sizing: border-box; padding: 45px;}
+.xyclose{ position: absolute; background: #fff; width: 40px; height: 40px; line-height: 40px; text-align: center; font-size: 20px; color: #333; border-radius: 50%;
+   top: -15px; right: -15px; box-shadow: 0 1px 3px #aaa; cursor: pointer;}
+.xyclose:hover{ background: #f5f5f5; color: #111;}
+.xyhidebox{ width: 100%; height: 100%; overflow: hidden;box-sizing: border-box;}
+.xymain{ width: calc(100% + 17px); height: 100%;  box-sizing: border-box; overflow: auto;}
+.xymain h3{ text-align: center; font-size:24px; font-weight: bold; color: #000;}
+.xymain label{ display: block; font-size: 18px; color: #222; line-height:32px; font-weight: bold;}
+.xymain span{ display: block; text-indent: 2em; font-size: 16px; color: #333; text-align: justify; line-height: 28px;}
+.xymain span span{ padding-left: 28px;}
+
 @media screen and (max-width: 1366px) {
   .qkypage_coop img{ max-width:80%; }
   .zh-login-box{ width:26%;}
